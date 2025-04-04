@@ -6,8 +6,8 @@ const DiagramLegend = () => {
     return (
         <div style={{
             position: 'absolute',
-            top: '80px',
-            right: '15px',
+            top: '480px',
+            right: '30px',
             display: 'flex',
             gap: '10px',
             flexDirection: 'column',
@@ -33,7 +33,7 @@ const DiagramLegend = () => {
             {/* ... */}
 
             {/* Hover instructions */}
-            <div style={{ fontSize: '9px', color: colors.info, marginTop: '5px', textAlign: 'center' }}>
+            <div style={{ fontSize: '9px', color: colors.armyBlack, marginTop: '5px', textAlign: 'center' }}>
                 Hover over sections for details
             </div>
         </div>

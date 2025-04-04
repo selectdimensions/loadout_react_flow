@@ -6,7 +6,7 @@ const PipelineWorkflow = () => {
     return (
         <div style={{
             position: 'absolute',
-            bottom: '20px',
+            bottom: '170px',
             left: '20px',
             right: '20px',
             border: `2px dashed ${colors.armyGold}`,
@@ -120,7 +120,7 @@ const PipelineWorkflow = () => {
             }}>
                 <svg width="100%" height="20">
                     <defs>
-                        <marker id="feedbackArrow-unique" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+                        <marker id="feedbackArrow-unique" markerWidth="10" markerHeight="7" refX="8" refY="3.5" orient="auto">
                             <polygon points="0 0, 10 3.5, 0 7" fill={colors.info} />
                         </marker>
                     </defs>
@@ -128,7 +128,7 @@ const PipelineWorkflow = () => {
                 </svg>
                 <div style={{
                     position: 'absolute',
-                    top: '-15px',
+                    top: '-20px',
                     fontSize: '10px',
                     color: colors.info,
                     backgroundColor: 'rgba(255,255,255,0.8)',

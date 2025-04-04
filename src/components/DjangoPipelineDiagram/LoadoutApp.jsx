@@ -1,6 +1,6 @@
 // src/components/DjangoPipelineDiagram/LoadoutApp.jsx
 import React from 'react';
-import { colors, Tooltip, FileWithCode } from '../DiagramComponents';
+import { colors, Tooltip, FileWithCode, Badge } from '../DiagramComponents';
 
 const LoadoutApp = ({ getSectionStyle, handleSectionHover, clearActiveSection }) => {
     return (

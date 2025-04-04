@@ -2,12 +2,13 @@
 import React from 'react';
 import './App.css';
 import DjangoPipelineDiagram from './components/DjangoPipelineDiagram';
+import ErrorBoundary from './components/ErrorBoundary';
 
 function App() {
   return (
     <div className="app-container">
       <header className="app-header">
-        <h1>Django Truck Prediction Pipeline Visualization</h1>
+        <h1>Django Cost Prediction Pipeline Visualization</h1>
         <p className="description">
           Interactive diagram showing the architecture of a military logistics prediction system
         </p>
@@ -15,7 +16,9 @@ function App() {
       
       <main className="app-content">
         <div className="diagram-wrapper">
-          <DjangoPipelineDiagram />
+          <ErrorBoundary>
+            <DjangoPipelineDiagram />
+          </ErrorBoundary>
         </div>
         
         <div className="instructions">

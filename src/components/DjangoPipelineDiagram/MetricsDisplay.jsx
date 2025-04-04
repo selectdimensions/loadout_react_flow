@@ -15,7 +15,7 @@ const MetricsDisplay = () => {
             ]}
             style={{
                 position: 'absolute',
-                bottom: '170px',
+                bottom: '5px',
                 left: '20px',
                 width: '180px'
             }}

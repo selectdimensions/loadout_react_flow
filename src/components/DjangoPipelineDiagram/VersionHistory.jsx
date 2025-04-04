@@ -6,8 +6,8 @@ const VersionHistory = () => {
     return (
         <div style={{
             position: 'absolute',
-            top: '150px',
-            right: '45px',
+            top: '425px',
+            right: '715px',
             backgroundColor: 'rgba(255,255,255,0.8)',
             border: `1px solid ${colors.gray02}`,
             borderRadius: '4px',

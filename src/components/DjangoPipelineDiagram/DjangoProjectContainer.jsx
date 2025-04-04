@@ -40,14 +40,14 @@ const DjangoProjectContainer = ({ activeSection, handleSectionHover, clearActive
             {/* Environment Section */}
             <div style={{
                 position: 'absolute',
-                top: '40px',
-                right: '20px',
+                top: '4px',
+                right: '250px',
                 display: 'flex',
                 gap: '10px',
                 backgroundColor: 'rgba(255,255,255,0.7)',
                 padding: '6px 10px',
                 borderRadius: '4px',
-                fontSize: '12px'
+                fontSize: '9px'
             }}>
                 <span>Environment: <Badge text="PRODUCTION" color={colors.white} backgroundColor={colors.success} /></span>
                 <span>|</span>

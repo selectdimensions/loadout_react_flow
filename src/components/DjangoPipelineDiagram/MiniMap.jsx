@@ -68,9 +68,9 @@ const MiniMap = ({ state }) => {
                 <div
                     className="mini-map-viewport absolute border-2 border-blue-500"
                     style={{
-                        width: `${100 / state.scale}%`,
-                        height: `${100 / state.scale}%`,
-                        transform: `translate(${-state.positionX * 0.15 / state.scale}px, ${-state.positionY * 0.15 / state.scale}px)`,
+                        width: `${100 / state?.scale}%`,
+                        height: `${100 / state?.scale}%`,
+                        transform: `translate(${-state?.positionX * 0.15 / state?.scale}px, ${-state?.positionY * 0.15 / state?.scale}px)`,
                         maxWidth: '150px',
                         maxHeight: '120px'
                     }}

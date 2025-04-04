@@ -20,7 +20,7 @@ const PredictionsApp = ({ getSectionStyle, handleSectionHover, clearActiveSectio
             onMouseEnter={() => handleSectionHover('predictions')}
             onMouseLeave={clearActiveSection}
         >
-            <Tooltip content="Specialized app for ML-based truck quantity prediction and associated services">
+            <Tooltip content="Specialized app for ML-based cost prediction and associated services">
                 <div style={{
                     backgroundColor: colors.tan,
                     color: colors.armyBlack,
@@ -33,7 +33,7 @@ const PredictionsApp = ({ getSectionStyle, handleSectionHover, clearActiveSectio
                     justifyContent: 'space-between',
                     alignItems: 'center'
                 }}>
-                    predictions (App) - Truck Prediction Pipeline
+                    predictions (App) - Cost Prediction Pipeline
                     <Badge text="ML ENABLED" color={colors.armyBlack} backgroundColor={colors.lightBlue} />
                 </div>
             </Tooltip>
@@ -180,44 +180,44 @@ def predict_trucks_for_movement(movement_id):
             {/* Model Performance Metrics */}
             <div style={{
                 position: 'absolute',
-                bottom: '-70px',
-                left: '20px',
-                backgroundColor: 'rgba(209,232,242,0.2)',
+                backgroundColor: 'rgb(255, 255, 255)',
                 border: `1px solid ${colors.lightBlue}`,
                 borderRadius: '4px',
                 padding: '8px',
                 fontSize: '10px',
-                width: '220px'
+                bottom: '-55px',
+                left: '-200px',
+                width: '180px'
             }}>
-                <div style={{ fontWeight: 'bold', color: colors.info, marginBottom: '5px' }}>Model Performance Metrics:</div>
-                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                <div style={{ fontWeight: 'bold', color: colors.armyGreen, marginBottom: '5px' }}>Model Performance Metrics:</div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', color: colors.armyGreen }}>
                     <span>Accuracy (within ±1 truck):</span>
                     <span style={{ fontWeight: 'bold', color: colors.success }}>94.2%</span>
                 </div>
-                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', color: colors.armyGreen }}>
                     <span>Mean Absolute Error:</span>
-                    <span style={{ fontWeight: 'bold' }}>0.36 trucks</span>
+                    <span style={{ fontWeight: 'bold', color: colors.armyGreen }}>0.36 trucks</span>
                 </div>
-                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', color: colors.armyGreen }}>
                     <span>Samples Used in Training:</span>
-                    <span style={{ fontWeight: 'bold' }}>2,874</span>
+                    <span style={{ fontWeight: 'bold', color: colors.armyGreen }}>2,874</span>
                 </div>
-                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', color: colors.armyGreen }}>
                     <span>Last Model Update:</span>
-                    <span style={{ fontWeight: 'bold' }}>Mar 12, 2025</span>
+                    <span style={{ fontWeight: 'bold', color: colors.armyGreen }}>Mar 12, 2025</span>
                 </div>
             </div>
 
             {/* Error Handling */}
             <div style={{
                 position: 'absolute',
-                bottom: '-40px',
-                right: '20px',
+                bottom: '-100px',
+                right: '0px',
                 backgroundColor: 'rgba(229,115,115,0.1)',
                 border: `1px solid ${colors.alert}`,
                 borderRadius: '4px',
                 padding: '5px 8px',
-                fontSize: '10px',
+                fontSize: '9px',
                 color: colors.armyBlack
             }}>
                 <div style={{ fontWeight: 'bold', color: colors.alert, marginBottom: '3px' }}>Error Handling:</div>
