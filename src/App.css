@@ -1,0 +1,92 @@
+/* src/App.css */
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.app-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.app-header h1 {
+  color: #2F372F;
+  margin-bottom: 8px;
+  font-size: 28px;
+}
+
+.description {
+  color: #565557;
+  font-size: 16px;
+}
+
+.app-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.diagram-wrapper {
+  height: 700px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.instructions {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.instructions h2 {
+  color: #2F372F;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+.instructions h3 {
+  color: #565557;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.instructions ul {
+  padding-left: 20px;
+}
+
+.instructions li {
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.app-footer {
+  margin-top: 30px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  padding: 15px 0;
+  border-top: 1px solid #eee;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+  .app-content {
+    flex-direction: row;
+  }
+  
+  .diagram-wrapper {
+    flex: 1;
+    min-height: 600px;
+  }
+  
+  .instructions {
+    width: 300px;
+    flex-shrink: 0;
+  }
+}
